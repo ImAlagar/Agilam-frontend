@@ -11,12 +11,41 @@ import SectionTitle from '../components/ui/SectionTitle'
 const Home = () => {
   const navigate = useNavigate()
 
-  const services = [
-    { icon: FaLaptopCode, title: 'Online Services', description: 'Government certificates, PAN, PF & more', route: '/services/online', color: 'primary' },
-    { icon: FaShieldAlt, title: 'Insurance Solutions', description: 'Health, Life & Vehicle Insurance', route: '/services/insurance', color: 'secondary' },
-    { icon: FaCamera, title: 'Creative Studio', description: 'Photo frames, restoration & design', route: '/services/studio', color: 'accent' },
-    { icon: FaCalendarAlt, title: 'Event Planners', description: 'Premium event planning services', route: '/services/events', color: 'primary' },
-  ]
+const services = [
+  {
+    icon: FaLaptopCode,
+    title: "Online Services",
+    items: [
+      "Government Certificates",
+      "PAN & PF Services",
+      "Voter & Ration Services",
+    ],
+    route: "/services/online",
+    color: "primary",
+  },
+  {
+    icon: FaShieldAlt,
+    title: "Insurance Solutions",
+    items: [
+      "Health Insurance",
+      "Life Insurance",
+      "Vehicle Insurance",
+    ],
+    route: "/services/insurance",
+    color: "secondary",
+  },
+  {
+    icon: FaCamera,
+    title: "Creative Studio",
+    items: [
+      "Photo Frames",
+      "Photo Restoration",
+      "Custom Designs",
+    ],
+    route: "/services/studio",
+    color: "accent",
+  },
+];
 
   const features = [
     { icon: FiZap, title: 'Fast Processing', description: 'Quick turnaround time for all services' },
